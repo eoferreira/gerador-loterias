@@ -25,6 +25,8 @@ import (
 )
 
 var cfgFile string
+var numberOfBets int
+var qtyNumbersPerBet int
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
@@ -51,11 +53,10 @@ func init() {
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
 
-	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.gerador-loterias.yaml)")
-
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
-	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	rootCmd.PersistentFlags().IntVarP(&qtyNumbersPerBet, "num_dezenas", "n", 6, "número de dezenas por aposta")
+	rootCmd.PersistentFlags().IntVarP(&numberOfBets, "apostas", "a", 1, "número de apostas")
 }
 
 // initConfig reads in config file and ENV variables if set.
