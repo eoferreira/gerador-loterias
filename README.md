@@ -5,7 +5,7 @@ Gerador de dezenas para apostas em loterias. Gera dezenas da mega sena.
 Para instalar:
 
 ```sh
-go get github.com/eoferreira/gerador-loterias
+go install github.com/eoferreira/gerador-loterias@latest
 ```
 
 Para usar, passe a quantidade de apostas e o número de dezenas por aposta como parâmetros:
