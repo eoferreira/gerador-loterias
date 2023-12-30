@@ -1,4 +1,4 @@
-module github/eoferreira/gerador-loterias
+module github.com/eoferreira/gerador-loterias
 
 go 1.15
 
