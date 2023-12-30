@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "github/eoferreira/gerador-loterias/cmd"
+import "github.com/eoferreira/gerador-loterias/cmd"
 
 func main() {
 	cmd.Execute()
